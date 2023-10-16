@@ -59,16 +59,8 @@ class ToggleSwitch(QtWidgets.QWidget):
 
 """
 
-        # Обновляем стили
-        if self.size_round % 2:
-            br12 = int(self.size_round / 2)
-        else:
-            br12 = self.size_round / 2
-
-        if self.size_field[1] % 2:
-            br17 = int(self.size_field[1] / 2)
-        else:
-            br17 = self.size_field[1] / 2
+        br12 = int(self.size_round / 2)
+        br17 = int(self.size_field[1] / 2)
 
         updated_style = self.style.replace("{BR17}", str(br17))
         updated_style = updated_style.replace("{BR12}", str(br12))
